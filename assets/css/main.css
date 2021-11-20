@@ -1065,7 +1065,7 @@ body.is-preload #bg:before {
 }
 #characters-wrapper .pajak {
   justify-content: flex-end;
-  background: url("./../../../images/loff.png") no-repeat;
+  background: url("./../../../../rezerwat99/images/loff.png") no-repeat;
   display: flex;
   height: 10rem;
   width: 8rem;
@@ -1077,24 +1077,24 @@ body.is-preload #bg:before {
 }
 @keyframes loff-walk {
   0% {
-    background: url("./../../../images/loff.png") no-repeat;
+    background: url("./../../../rezerwat99/images/loff.png") no-repeat;
     background-size: contain;
     background-position: right;
   }
   50% {
-    background: url("./../../../images/loff2.png") no-repeat;
+    background: url("./../../../rezerwat99/images/loff2.png") no-repeat;
     background-size: contain;
     background-position: right;
   }
   100% {
-    background: url("./../../../images/loff3.png") no-repeat;
+    background: url("./../../../rezerwat99/images/loff3.png") no-repeat;
     background-size: contain;
     background-position: right;
   }
 }
 #characters-wrapper .dex {
   justify-content: flex-start;
-  background: url("./../../../images/dex.png") no-repeat;
+  background: url("./../../../rezerwat99/images/dex.png") no-repeat;
   display: flex;
   height: 10rem;
   width: 8rem;
@@ -1105,15 +1105,15 @@ body.is-preload #bg:before {
 }
 @keyframes dex-walk {
   0% {
-    background: url("./../../../images/dex.png") no-repeat;
+    background: url("./../../../rezerwat99/images/dex.png") no-repeat;
     background-size: contain;
   }
   50% {
-    background: url("./../../../images/dex2.png") no-repeat;
+    background: url("./../../../rezerwat99/images/dex2.png") no-repeat;
     background-size: contain;
   }
   100% {
-    background: url("./../../../images/dex3.png") no-repeat;
+    background: url("./../../../rezerwat99/images/dex3.png") no-repeat;
     background-size: contain;
   }
 }
