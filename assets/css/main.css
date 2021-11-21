@@ -1009,7 +1009,7 @@ button {
   -webkit-transition-delay: 0.75s;
   -ms-transition-delay: 0.75s;
   transition-delay: 0.75s;
-  background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
+  background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("/images/overlay.png");
   background-size: auto, 256px 256px;
   background-position: center, center;
   background-repeat: no-repeat, repeat;
@@ -1024,7 +1024,7 @@ button {
   -webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
   -ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
   transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-  background-image: url("../../images/bg.jpg");
+  background-image: url("/images/bg.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1072,7 +1072,7 @@ body.is-preload #bg:before {
   background-size: contain;
   background-position: right;
   animation-name: loff-walk;
-  animation-duration: 0.8s;
+  animation-duration: 1.1s;
   animation-iteration-count: infinite;
   animation-timing-function: steps(1);
 }
@@ -1083,12 +1083,17 @@ body.is-preload #bg:before {
     background-position: right;
   }
   20% {
-    background: url("/images/loff2.png") no-repeat;
+    background: url("/images/loff3.png") no-repeat;
     background-size: contain;
     background-position: right;
   }
-  60% {
-    background: url("/images/loff3.png") no-repeat;
+  50% {
+    background: url("/images/loff1.png") no-repeat;
+    background-size: contain;
+    background-position: right;
+  }
+  70% {
+    background: url("/images/loff2.png") no-repeat;
     background-size: contain;
     background-position: right;
   }
@@ -1101,7 +1106,7 @@ body.is-preload #bg:before {
   width: 8rem;
   background-size: contain;
   animation-name: dex-walk;
-  animation-duration: 0.8s;
+  animation-duration: 1.1s;
   animation-iteration-count: infinite;
   animation-timing-function: steps(1);
 }
@@ -1114,45 +1119,53 @@ body.is-preload #bg:before {
     background: url("/images/dex2.png") no-repeat;
     background-size: contain;
   }
-  60% {
+  50% {
+    background: url("/images/dex1.png") no-repeat;
+    background-size: contain;
+  }
+  70% {
     background: url("/images/dex3.png") no-repeat;
     background-size: contain;
   }
 }
 #characters-wrapper .frames1 {
   animation-name: up-down1;
-  animation-duration: 3s;
+  animation-duration: 1.1s;
   animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  position: relative;
+  animation-timing-function: steps(1);
 }
 @keyframes up-down1 {
   0% {
-    top: -0.2rem;
+    margin-top: -0.1rem;
+  }
+  20% {
+    margin-top: 0;
   }
   50% {
-    top: 0.2rem;
+    margin-top: -0.1rem;
   }
-  100% {
-    top: -0.2rem;
+  70% {
+    margin-top: 0;
   }
 }
 #characters-wrapper .frames2 {
   animation-name: up-down2;
-  animation-duration: 3.4s;
+  animation-duration: 1.1s;
   animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  position: relative;
+  animation-timing-function: steps(1);
 }
 @keyframes up-down2 {
   0% {
-    top: 0.2rem;
+    margin-top: 0;
+  }
+  20% {
+    margin-top: -0.1rem;
   }
   50% {
-    top: -0.2rem;
+    margin-top: 0;
   }
-  100% {
-    top: 0.2rem;
+  70% {
+    margin-top: -0.1rem;
   }
 }
 #characters-wrapper .social-wrapper {
