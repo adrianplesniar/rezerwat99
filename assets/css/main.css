@@ -1119,14 +1119,14 @@ body.is-preload #bg:before {
     background-size: contain;
   }
 }
-#characters-wrapper .frames {
-  animation-name: up-down;
+#characters-wrapper .frames1 {
+  animation-name: up-down1;
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
   position: relative;
 }
-@keyframes up-down {
+@keyframes up-down1 {
   0% {
     top: -0.2rem;
   }
@@ -1135,6 +1135,24 @@ body.is-preload #bg:before {
   }
   100% {
     top: -0.2rem;
+  }
+}
+#characters-wrapper .frames2 {
+  animation-name: up-down2;
+  animation-duration: 3.4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  position: relative;
+}
+@keyframes up-down2 {
+  0% {
+    top: 0.2rem;
+  }
+  50% {
+    top: -0.2rem;
+  }
+  100% {
+    top: 0.2rem;
   }
 }
 #characters-wrapper .social-wrapper {
@@ -1149,13 +1167,14 @@ body.is-preload #bg:before {
 #characters-wrapper .social-wrapper img {
   padding: 0.2rem;
   border-radius: 10%;
-  -moz-transition: background-color 0.2s ease-in-out;
-  -webkit-transition: background-color 0.2s ease-in-out;
-  -ms-transition: background-color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out;
+  -moz-transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+  -ms-transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
 #characters-wrapper .social-wrapper img:hover {
   background-color: rgba(255, 255, 255, 0.075);
+  transform: scale(1.1);
 }
 #characters-wrapper .character {
   display: flex;

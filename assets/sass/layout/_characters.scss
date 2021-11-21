@@ -60,17 +60,31 @@
             }
         }
 
-        .frames {
-            animation-name: up-down;
+        .frames1 {
+            animation-name: up-down1;
             animation-duration: 3s;
             animation-iteration-count: infinite;
             animation-timing-function: ease-in-out;
             position: relative;
 
-            @keyframes up-down {
+            @keyframes up-down1 {
                 0% {top: -0.2rem;}
                 50% {top: 0.2rem;}
                 100% {top: -0.2rem;}
+            }
+        }
+
+        .frames2 {
+            animation-name: up-down2;
+            animation-duration: 3.4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            position: relative;
+
+            @keyframes up-down2 {
+                0% {top: 0.2rem;}
+                50% {top: -0.2rem;}
+                100% {top: 0.2rem;}
             }
         }
 
@@ -87,14 +101,15 @@
             img {
                 padding: 0.2rem;
                 border-radius: 10%;
-                -moz-transition: background-color 0.2s ease-in-out;
-                -webkit-transition: background-color 0.2s ease-in-out;
-                -ms-transition: background-color 0.2s ease-in-out;
-                transition: background-color 0.2s ease-in-out;
+                -moz-transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+                -webkit-transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+                -ms-transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+                transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
             }
 
             img:hover {
                 background-color: rgba(255, 255, 255, 0.075);
+                transform: scale(1.1);
             }
 
         }
