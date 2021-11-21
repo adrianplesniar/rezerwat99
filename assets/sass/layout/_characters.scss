@@ -21,7 +21,7 @@
 
         .pajak {
             justify-content: flex-end;
-            background: url('./../../../../rezerwat99/images/loff.png') no-repeat;
+            background: url('/images/loff1.png') no-repeat;
             display: flex;
             height: 10rem;
             width: 8rem;
@@ -31,17 +31,18 @@
             animation-name: loff-walk;
             animation-duration: 0.8s;
             animation-iteration-count: infinite;
+            animation-timing-function: steps(1);
             
             @keyframes loff-walk {
-                0% {background: url('./../../../rezerwat99/images/loff.png') no-repeat; background-size: contain; background-position: right;}
-                50% {background: url('./../../../rezerwat99/images/loff2.png') no-repeat; background-size: contain; background-position: right;}
-                100% {background: url('./../../../rezerwat99/images/loff3.png') no-repeat; background-size: contain; background-position: right;}
+                0% {background: url('/images/loff1.png') no-repeat; background-size: contain; background-position: right;}
+                20% {background: url('/images/loff2.png') no-repeat; background-size: contain; background-position: right;}
+                60% {background: url('/images/loff3.png') no-repeat; background-size: contain; background-position: right;}
             }
         }
         
         .dex {
             justify-content: flex-start;
-            background: url('./../../../rezerwat99/images/dex.png') no-repeat;
+            background: url('/images/dex1.png') no-repeat;
             display: flex;
             height: 10rem;
             width: 8rem;
@@ -50,11 +51,26 @@
             animation-name: dex-walk;
             animation-duration: 0.8s;
             animation-iteration-count: infinite;
+            animation-timing-function: steps(1);
             
             @keyframes dex-walk {
-                0% {background: url('./../../../rezerwat99/images/dex.png') no-repeat; background-size: contain;}
-                50% {background: url('./../../../rezerwat99/images/dex2.png') no-repeat; background-size: contain;}
-                100% {background: url('./../../../rezerwat99/images/dex3.png') no-repeat; background-size: contain;}
+                0% {background: url('/images/dex1.png') no-repeat; background-size: contain;}
+                20% {background: url('/images/dex2.png') no-repeat; background-size: contain;}
+                60% {background: url('/images/dex3.png') no-repeat; background-size: contain;}
+            }
+        }
+
+        .frames {
+            animation-name: up-down;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            position: relative;
+
+            @keyframes up-down {
+                0% {top: -0.2rem;}
+                50% {top: 0.2rem;}
+                100% {top: -0.2rem;}
             }
         }
 
@@ -67,6 +83,20 @@
             a {
                 border: none;
             }
+
+            img {
+                padding: 0.2rem;
+                border-radius: 10%;
+                -moz-transition: background-color 0.2s ease-in-out;
+                -webkit-transition: background-color 0.2s ease-in-out;
+                -ms-transition: background-color 0.2s ease-in-out;
+                transition: background-color 0.2s ease-in-out;
+            }
+
+            img:hover {
+                background-color: rgba(255, 255, 255, 0.075);
+            }
+
         }
 
         .character {
